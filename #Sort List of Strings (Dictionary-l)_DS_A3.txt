@@ -1,0 +1,9 @@
+#Sort List of Strings (Dictionary-like):
+def dictionary_sort(strings):
+    return sorted(strings, key=lambda x: (len(x), x))
+
+# Get user input for a list of strings (space-separated)
+input_strings = input("Enter a list of strings (space-separated): ").split()
+
+sorted_strings = dictionary_sort(input_strings)
+print("Sorted strings (dictionary-like order):", sorted_strings)
